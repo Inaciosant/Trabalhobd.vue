@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de Cadastro</title>
+   
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <div class="container" id="signupContainer">
+        <form id="signupForm" action="/cadastro" method="post">
+            <h2>Cadastro</h2>
+            <div class="input-group">
+                <label for="newUsername">Novo Usuário:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+            </div>
+            <div class="input-group">
+                <label for="newPassword">Nova Senha:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+            </div>
+            <button type="submit">Cadastrar</button>
+            <p class="success-message" id="success-message"></p>
+        </form>
+        <div id="backToLoginLink">
+            <p>Já tem uma conta? <a href="login.html" id="backToLoginBtn">Voltar ao login</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="script.js"></script>

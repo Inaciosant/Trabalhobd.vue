@@ -1,0 +1,75 @@
+/* Estilos básicos para o body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o container */
+.container {
+    width: 300px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para os grupos de entrada */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Estilos para o botão de envio */
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Estilos para a mensagem de sucesso */
+.success-message {
+    color: #28a745;
+    margin-top: 10px;
+}
+
+/* Estilos para o link de volta ao login */
+#backToLoginLink {
+    margin-top: 20px;
+}
+
+#backToLoginLink a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#backToLoginLink a:hover {
+    text-decoration: underline;
+}
