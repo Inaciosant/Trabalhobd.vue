@@ -24,11 +24,17 @@
         new Vue({
             el: '#app',
             data: {
+
                 heroiVida: '',
-                vilaoVida: ''
+                vilaoVida: '',
+                heroiAcao: '',
+                vilaoAcao: '',
             },
             mounted() {
                 this.fetchCharacterData();
+                this.getAcao();
+                this.getAcaoVilao();
+                
             },
             methods: {
                 async fetchCharacterData() {
@@ -40,9 +46,34 @@
                     } catch (error) {
                         console.error('Erro ao buscar dados dos personagens:', error);
                     }
-                }
+                },
+                async getAcao() {
+                    try {
+                        const response = await fetch('http://localhost:3000/return'); // Substitua pela sua rota da API
+                        const data = await response.json();
+                        this.heroiAcao = data.heroi.acao;
+
+                    } catch (error) {
+                        console.error('Erro ao buscar acao dos heroi:', error);
+                    }
+                },
+                async getAcaoVilao() {
+                    try {
+                        const response = await fetch('http://localhost:3000/returnVilao'); // Substitua pela sua rota da API
+                        const data = await response.json();
+                        this.vilaoAcao = data.vilao.acao;
+
+                    } catch (error) {
+                        console.error('Erro ao buscar acao do vilao:', error);
+                    }
+                },
+             
+
             }
         });
+
+        
+
     </script>
 </body>
 </html>
