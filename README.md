@@ -20,7 +20,7 @@ O jogo foi desenvolvido com Vue.js e Node.js, e está conectado ao Microsoft Azu
 
 - Dashboard conectado ao Banco de Dados:
 
-  <img src="/img/dashboard" alt="Dashboard do jogo">
+  <img src="/img/dash" alt="Dashboard do jogo">
 
 
 ## Dependencia para funcionamento.
