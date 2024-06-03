@@ -9,10 +9,9 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
-</head>
 <body>
     <div id="app">
-        <div class="personagem" >
+        <div class="personagem">
             <div class="barra-vida" :style="{width: heroi.vida + '%'}">{{ heroi.vida }}</div>
             <div class="sprite"><img src="img/naruto.png" class="pokemon"></div>
             
@@ -28,14 +27,14 @@
             <p>Vilão: {{ consoleV }}</p>
             <button onclick="window.location.href = 'dashboard.html'">Dashboard</button>
         </div>
-        <div class="personagem" >
+        <div class="personagem">
             <div class="barra-vida" :style="{width: vilao.vida + '%'}">{{ vilao.vida }}</div>
             <div class="sprite"><img src="img/ciborgue.png" class="pokemon"></div>
-            
         </div>
     </div>
-</body>
-</html>
 
-<script src="/index.js"></script>
-<script src="server.js"></script>
+    <script src="/index.js"></script>
+    <script src="server.js"></script>
+</body>
+
+</html>
