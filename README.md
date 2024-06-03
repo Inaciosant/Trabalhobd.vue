@@ -2,7 +2,7 @@
 
 Neste jogo, dois personagens se enfrentam, e um deve derrotar o outro esgotando 100% da vida do adversário.
 
-👾 Acesse o jogo: <a href="https://fluffy-kleicha-abd2c1.netlify.app/">clicando aqui!</a>
+👾 Acesse o jogo: <a href="https://amazing-florentine-c41090.netlify.app/login.html">clicando aqui!</a>
 
 ##
 
